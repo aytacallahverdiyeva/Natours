@@ -5,7 +5,20 @@
 }
 html{
     //1 rem 
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px; 10/16= 62.5%
+    
+    @include respond(phone){
+        font-size: 50%;
+    }
+    @include respond(tab-port){
+        font-size: 60%;
+    }
+    @include respond(tab-land){
+        font-size: 70%;
+    }
+    @include respond(big-desktop){
+        font-size: 80%;
+    }
 }
 body{
     box-sizing: border-box;
