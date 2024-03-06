@@ -15,8 +15,10 @@
 		transition: all .3s;
 		color: inherit;
 
+
+		
 		@include respond(tab-port){
-			width: 100%;
+			width: 99%;
 		}
 		&:focus{
 			outline: none;
